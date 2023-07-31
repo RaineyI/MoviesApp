@@ -20,12 +20,12 @@ class FragmentMoviesList : Fragment() {
 
         poster_1.setOnClickListener {
             val details_1 = FragmentMoviesDetails()
-            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
-            transaction.addToBackStack(null)
-            transaction.replace(R.id.forFrag, details_1)
-            transaction.commit()
+            parentFragmentManager.beginTransaction().apply{
+                addToBackStack(null)
+                replace(R.id.forFrag, details_1)
+                commit()
+            }
         }
-
         return view
     }
 
