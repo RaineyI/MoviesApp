@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/bg_for_poster_1"
+        android:layout_width="180dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_poster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:adjustViewBounds="true"
+            android:foregroundGravity="top"
+            app:layout_constrainedWidth="true"
+            app:srcCompat="@drawable/poster_avengers" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/like_ic" />
+
+        <ImageView
+            android:id="@+id/bg_age"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/age_bg_1" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            android:text="13+"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:text="137_min"
+            android:textColor="@color/grey"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="bottom"
+            android:text="avengers_end_game"
+            android:textColor="@color/text_2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/star_1"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/star_icon" />
+
+        <ImageView
+            android:id="@+id/star_2"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/star_icon" />
+
+        <ImageView
+            android:id="@+id/star_3"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/star_icon" />
+
+        <ImageView
+            android:id="@+id/star_4"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/star_icon" />
+
+        <ImageView
+            android:id="@+id/star_5"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/star_icon_grey" />
+
+        <TextView
+            android:id="@+id/reviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="52dp"
+            android:gravity="bottom"
+            android:text="125_reviews"
+            android:textColor="@color/grey_l"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="66dp"
+            android:gravity="bottom"
+            android:text="action_adventure_fantasy"
+            android:textColor="@color/red_for_tag"
+            android:textSize="8sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

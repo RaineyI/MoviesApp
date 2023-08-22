@@ -3,14 +3,13 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/bg">
 
         <ImageView
@@ -28,7 +27,7 @@
             android:id="@+id/arrowBack"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -53,7 +52,7 @@
             android:id="@+id/titleOfFilm"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="1dp"
             android:text="@string/avengers_end_game"
             android:textColor="@color/white"
@@ -65,7 +64,7 @@
             android:id="@+id/age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="125dp"
             android:layout_marginEnd="16dp"
             android:text="@string/_13"
@@ -80,7 +79,7 @@
             android:id="@+id/headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
             android:text="@string/action_adventure_fantasy"
             android:textColor="@color/red_for_tag"
@@ -92,7 +91,7 @@
             android:id="@+id/star1"
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
             app:layout_constraintEnd_toStartOf="@+id/star2"
@@ -161,7 +160,7 @@
             android:id="@+id/storyline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:text="@string/storyline"
             android:textColor="@color/text_2"
@@ -174,9 +173,9 @@
             android:id="@+id/story"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="20dp"
             android:alpha="0.75"
             android:text="@string/av_description"
             android:textColor="@color/white"
@@ -189,7 +188,7 @@
             android:id="@+id/cast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:text="@string/cast"
             android:textColor="@color/text_2"
@@ -198,107 +197,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/story" />
 
-
-
-        <ImageView
-            android:id="@+id/actor_1"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvActors"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:adjustViewBounds="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintEnd_toStartOf="@+id/actor_2"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cast"
-            app:srcCompat="@drawable/robert" />
+            android:paddingBottom="10dp"/>
 
-        <ImageView
-            android:id="@+id/actor_2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:adjustViewBounds="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintEnd_toStartOf="@+id/actor_3"
-            app:layout_constraintStart_toEndOf="@+id/actor_1"
-            app:layout_constraintTop_toBottomOf="@+id/cast"
-            app:srcCompat="@drawable/chris_ev" />
-
-        <ImageView
-            android:id="@+id/actor_3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:adjustViewBounds="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintEnd_toStartOf="@+id/actor_4"
-            app:layout_constraintStart_toEndOf="@+id/actor_2"
-            app:layout_constraintTop_toBottomOf="@+id/cast"
-            app:srcCompat="@drawable/mark" />
-
-        <ImageView
-            android:id="@+id/actor_4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="24dp"
-            android:adjustViewBounds="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/actor_3"
-            app:layout_constraintTop_toBottomOf="@+id/cast"
-            app:srcCompat="@drawable/chris_h" />
-
-        <TextView
-            android:id="@+id/name_1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:text="@string/robert_downey_jr"
-            android:textColor="#D8D8D8"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/actor_1"
-            app:layout_constraintStart_toStartOf="@+id/actor_1"
-            app:layout_constraintTop_toBottomOf="@+id/actor_1" />
-
-        <TextView
-            android:id="@+id/name_2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:text="@string/chris_evans"
-            android:textColor="#D8D8D8"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/actor_2"
-            app:layout_constraintStart_toStartOf="@+id/actor_2"
-            app:layout_constraintTop_toBottomOf="@+id/actor_2" />
-
-        <TextView
-            android:id="@+id/name_3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:text="@string/mark_ruffalo"
-            android:textColor="#D8D8D8"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/actor_3"
-            app:layout_constraintStart_toStartOf="@+id/actor_3"
-            app:layout_constraintTop_toBottomOf="@+id/actor_3" />
-        <TextView
-            android:id="@+id/name_4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:text="@string/chris_hemsworth"
-            android:textColor="#D8D8D8"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/actor_4"
-            app:layout_constraintStart_toStartOf="@+id/actor_4"
-            app:layout_constraintTop_toBottomOf="@+id/actor_4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
